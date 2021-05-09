@@ -34,6 +34,7 @@ const predict = require('image-classfication-demo');
   const v1 = await predict('./test.png');
   console.log(v1);
 })();
+```
 
 ## output
 ```json
