@@ -1,0 +1,90 @@
+{
+  "pipeline": {
+    "id": "5xrdr5b2",
+    "name": null,
+    "dataCollectId": "ub0lij2d",
+    "dataCollect": "@pipcook/plugins-image-classification-data-collect",
+    "dataCollectParams": "{\"url\":\"http://ai-sample.oss-cn-hangzhou.aliyuncs.com/image_classification/datasets/imageclass-test.zip\"}",
+    "dataAccessId": "w8279kje",
+    "dataAccess": "@pipcook/plugins-pascalvoc-data-access",
+    "dataAccessParams": "{}",
+    "dataProcessId": "dyydkyab",
+    "dataProcess": "@pipcook/plugins-tensorflow-image-classification-process",
+    "dataProcessParams": "{\"resize\":[256,256]}",
+    "datasetProcessId": null,
+    "datasetProcess": null,
+    "datasetProcessParams": "{}",
+    "modelDefineId": "shz0rp9h",
+    "modelDefine": "@pipcook/plugins-tensorflow-resnet-model-define",
+    "modelDefineParams": "{\"batchSize\":8,\"freeze\":true}",
+    "modelLoadId": null,
+    "modelLoad": null,
+    "modelLoadParams": "{}",
+    "modelTrainId": "2ii6blpa",
+    "modelTrain": "@pipcook/plugins-image-classification-tensorflow-model-train",
+    "modelTrainParams": "{\"epochs\":15}",
+    "modelEvaluateId": "60tf5zgc",
+    "modelEvaluate": "@pipcook/plugins-image-classification-tensorflow-model-evaluate",
+    "modelEvaluateParams": "{}",
+    "createdAt": "2021-05-09T12:15:51.007Z",
+    "updatedAt": "2021-05-09T12:15:51.007Z"
+  },
+  "output": {
+    "id": "5zabaoyn",
+    "pipelineId": "5xrdr5b2",
+    "specVersion": "1.3.0",
+    "status": 2,
+    "params": [
+      {
+        "pluginType": "dataCollect",
+        "data": {
+          "url": "http://ai-sample.oss-cn-hangzhou.aliyuncs.com/image_classification/datasets/imageclass-test.zip"
+        }
+      },
+      {
+        "pluginType": "dataAccess",
+        "data": {}
+      },
+      {
+        "pluginType": "dataProcess",
+        "data": {
+          "resize": [
+            256,
+            256
+          ]
+        }
+      },
+      {
+        "pluginType": "datasetProcess",
+        "data": {}
+      },
+      {
+        "pluginType": "modelLoad",
+        "data": {}
+      },
+      {
+        "pluginType": "modelDefine",
+        "data": {
+          "batchSize": 8,
+          "freeze": true
+        }
+      },
+      {
+        "pluginType": "modelTrain",
+        "data": {
+          "epochs": 15
+        }
+      },
+      {
+        "pluginType": "modelEvaluate",
+        "data": {}
+      }
+    ],
+    "currentIndex": -1,
+    "updatedAt": "2021-05-09T12:15:51.194Z",
+    "createdAt": "2021-05-09T12:15:51.194Z",
+    "dataset": "{\"labelMap\":{\"avator\":0,\"blurBackground\":1},\"labelArray\":[\"avator\",\"blurBackground\"],\"feature\":{\"shape\":[256,256,3]}}",
+    "evaluateMap": "{\"loss\":1.1061188491641343e-7,\"accuracy\":1}",
+    "endTime": 1620562653549
+  }
+}

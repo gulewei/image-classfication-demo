@@ -1,0 +1,27 @@
+{
+  "name": "image-classfication-demo",
+  "version": "1.0.0",
+  "description": "a simple classfication for avatar or background",
+  "bin": {
+    "image-classfication-demo": "bin.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node boapkg.js"
+  },
+  "keywords": [],
+  "author": "gulewei",
+  "license": "ISC",
+  "dependencies": {
+    "@pipcook/plugins-tensorflow-resnet-model-define": "1.1.1",
+    "@pipcook/plugins-tensorflow-image-classification-process": "1.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venecy/image-classfication-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/venecy/image-classfication-demo/issues"
+  },
+  "homepage": "https://github.com/venecy/image-classfication-demo#readme"
+}
