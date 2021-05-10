@@ -3,13 +3,13 @@
 ## install
 
 ```bash
-npm install -g image-classfication-demo
+npm install
 ```
 
 如果安装较慢可设置 BOA_TUNA=1
 
 ```bash
-BOA_TUNA=1 npm install -g image-classfication-demo
+BOA_TUNA=1 npm install
 ```
 
 ## usage
@@ -17,13 +17,13 @@ BOA_TUNA=1 npm install -g image-classfication-demo
 - cli
 
 ```bash
-image-classfication-demo ./test.jpg
+node bin.js ./test.jpg
 ```
 
 or
 
 ```bash
-image-classfication-demo --showlabel ./test.jpg
+node bin.js --showlabel ./test.jpg
 ```
 
 - js api
